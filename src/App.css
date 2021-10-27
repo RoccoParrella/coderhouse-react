@@ -1,5 +1,26 @@
 .App {
   text-align: center;
+  
+}
+
+.nombrePais{
+  font-size: 1.5rem;
+}
+
+.carritoImg{
+  width: 25px;
+  padding-top: 7px;
+}
+
+.card {
+  width: 12rem;
+  text-align: center;
+  margin: 20px;
+}
+
+.divJugadores{
+  display: flex;
+  margin: 20px;
 }
 
 .App-logo {

@@ -1,18 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
-import NavBar from './NavBar.js'
+import NavBar from './main-components/NavBar.js'
+import ItemListContainer from "./main-components/ItemListContainer"
+import Footer from './main-components/Footer.js'
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <header className="App-header">
-        <img src= {logo} className="App-logo" alt="logo" />
-        <p>
-          Bienvenido a nuestra tienda!
-        </p>
-      </header>
-    </div>
+    <>
+      <NavBar/>
+      <div className="divJugadores">
+      <ItemListContainer nombre='Remera' stock="10" precio="500"/>
+      <ItemListContainer nombre='Pantalon' stock="15" precio="650"/>
+      <ItemListContainer nombre='Buzo' stock="3" precio="1500"/>
+      </div>
+      <Footer nombre="Francia"/>
+    </>
   );
 }
 
