@@ -1,5 +1,5 @@
 import { useState } from "react";
-import '../App.css'
+import '../App.css';
 
 const Itemcount = (props) => {
 
@@ -9,14 +9,12 @@ const Itemcount = (props) => {
         if (valoraciones < props.max) {
             setValoraciones(valoraciones+1);
         }
-        
     }
 
     const decrement = () => {
         if (valoraciones > 0) {
             setValoraciones(valoraciones-1);
         }
-       
     }
 
     return (
